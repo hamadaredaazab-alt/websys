@@ -3,35 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Project Website</title>
+  <title>Studentprosjekt — Hovedside</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Obligatorisk arbeidskrav</h1>
+    <h1>🎓 Obligatorisk arbeidskrav</h1>
+    <p>Velkommen! Utforsk alle oppgavene og treningsprosjektet mitt.</p>
     <nav>
       <ul>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="trenemedoss.html">Tren Med Oss-nettsiden</a></li>
+        <li><a href="index.html" class="active">Hjem</a></li>
+        <li><a href="trenmedoss.html">Tren Med Oss</a></li>
+        <li><a href="om.html">Om meg</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h2>Oppgaver</h2>
-    <ul>
-<li><a href="oppgaver/html-css.html">HTML/CSS</a></li>
-<li><a href="oppgaver/personas.html">Personas</a></li>
-<li><a href="oppgaver/ia-wireframes.html">IA og Wireframes</a></li>
-<li><a href="oppgaver/grubbekontrakt.html">Grubbekontrakt</a></li>
-<li><a href="oppgaver/brukerhistorier.html">Brukerhistorier</a></li>
-<li><a href="oppgaver/systemutviklingsmetoder.html">Systemutviklingsmetoder</a></li>
-<li><a href="oppgaver/agile-metoder.html">Agile metoder</a></li>
-</ul>
+    <!-- Seksjon 1: Obligatoriske oppgaver -->
+    <h2>📚 Obligatoriske oppgaver</h2>
+    <ul class="day-list">
+      <li class="day-card">
+        <h3>HTML & CSS</h3>
+        <img src="https://cdn.pixabay.com/photo/2017/08/05/11/12/html-2581835_1280.png" alt="HTML og CSS">
+        <p>Grunnleggende nettsidebygging</p>
+        <a href="html-css.html" class="btn">Åpne</a>
+      </li>
+
+      <li class="day-card">
+        <h3>Personas</h3>
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/01/54/avatar-1867121_1280.png" alt="Personas">
+        <p>Brukerprofiler og målgruppe</p>
+        <a href="personas.html" class="btn">Åpne</a>
+      </li>
+
+      <li class="day-card">
+        <h3>IA & Wireframes</h3>
+        <img src="https://cdn.pixabay.com/photo/2020/01/07/09/53/wireframe-4747225_1280.png" alt="IA og Wireframes">
+        <p>Struktur og skisser for nettside</p>
+        <a href="ai-wireframes.html" class="btn">Åpne</a>
+      </li>
+
+      <li class="day-card">
+        <h3>Gruppekontrakt</h3>
+        <img src="https://cdn.pixabay.com/photo/2017/01/31/13/22/checklist-2024686_1280.png" alt="Gruppekontrakt">
+        <p>Samarbeidsavtale med gruppe</p>
+        <a href="gruppekontrakt.html" class="btn">Åpne</a>
+      </li>
+
+      <li class="day-card">
+        <h3>Brukerhistorier</h3>
+        <img src="https://cdn.pixabay.com/photo/2019/08/27/11/04/story-4434852_1280.png" alt="Brukerhistorier">
+        <p>Funksjoner sett fra brukerens syn</p>
+        <a href="brukerhistorier.html" class="btn">Åpne</a>
+      </li>
+
+      <li class="day-card">
+        <h3>Systemutviklingsmetoder</h3>
+        <img src="https://cdn.pixabay.com/photo/2016/07/26/14/33/diagram-1542653_1280.png" alt="Systemutvikling">
+        <p>Vannfall, spiral, prototyping</p>
+        <a href="systemutviklingsmetoder.html" class="btn">Åpne</a>
+      </li>
+
+      <li class="day-card">
+        <h3>Agile metoder</h3>
+        <img src="https://cdn.pixabay.com/photo/2016/08/20/05/42/sunset-1607288_1280.jpg" alt="Agile">
+        <p>Scrum, sprint, stand-up møter</p>
+        <a href="agile-metoder.html" class="btn">Åpne</a>
+      </li>
+    </ul>
+
+    <!-- Seksjon 2: Tren Med Oss-prosjektet -->
+    <h2>💪 Tren Med Oss-prosjektet</h2>
+    <ul class="day-list">
+      <li class="day-card">
+        <h3>Treningsplan</h3>
+        <img src="https://cdn.pixabay.com/photo/2017/08/06/17/32/sport-2593307_1280.jpg" alt="Treningsplan">
+        <p>Ukens treningsplan med videoer</p>
+        <a href="treningsplan.html" class="btn">Åpne</a>
+      </li>
+
+      <li class="day-card">
+        <h3>Om prosjektet</h3>
+        <img src="https://cdn.pixabay.com/photo/2017/01/31/13/16/light-bulb-2024563_1280.png" alt="Om prosjektet">
+        <p>Hva Tren Med Oss handler om</p>
+        <a href="om.html" class="btn">Åpne</a>
+      </li>
+
+      <li class="day-card">
+        <h3>Kontakt</h3>
+        <img src="https://cdn.pixabay.com/photo/2017/01/31/13/16/contact-2024558_1280.png" alt="Kontakt">
+        <p>Send meg en melding</p>
+        <a href="kontakt.html" class="btn">Åpne</a>
+      </li>
+    </ul>
   </main>
 
   <footer>
-    <p>&copy; 2025 Obligatorisk arbeidskrav</p>
+    <p>&copy; 2025 Studentprosjekt — Obligatorisk arbeidskrav</p>
   </footer>
 </body>
 </html>
