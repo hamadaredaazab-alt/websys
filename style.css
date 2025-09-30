@@ -5,7 +5,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0;            /* innvendig margin */
 }
 
 body {
@@ -15,16 +15,18 @@ body {
   line-height: 1.6;
 }
 
-/* === Overskrifter === */
+/* === Overskrifter === */         
+ /*<h1> brukes én gang per side som hovedtittel.
+<h2>–<h6> brukes for å lage seksjoner og underseksjoner.*/
 h1 {
-  font-size: 2rem;
-  color: #2c3e50;
-  text-align: center;
+  font-size: 2rem;              /*→ størrelsen på overskriften*/
+  color: #2c3e50;             /*→ fargen på teksten */
+  text-align: center;            /*→ hvordan teksten plasseres (her: sentrert)*/
 }
 h2 {
   font-size: 1.6rem;
   color: #2c3e50;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0;                  /*→ avstand over og under overskriften*/
   text-align: center;
 }
 h3 {
@@ -47,24 +49,24 @@ header p {
 
 /* === Navigasjon === */
 nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  list-style: none;
-  padding: 0.5rem;
-  background: #1abc9c;
+  display: flex;                     /* lager en horisontal liste */
+  justify-content: center;           /* sentrerer menypunktene */
+  gap: 0.5rem;                       /* avstand mellom menypunktene */
+  list-style: none;                   /* fjerner kulepunkter */
+  padding: 0.5rem;                       
+  background: #1abc9c;            /* bakgrunnsfarge for menyen */
   border-radius: 8px;
-  flex-wrap: wrap;
+  flex-wrap: wrap;                   /* bryter linjen på små skjermer */
 }
 nav ul li a {
   color: white;
-  text-decoration: none;
+  text-decoration: none;                /* fjerner understreking */
   padding: 6px 12px;
   border-radius: 6px;
   font-weight: bold;
 }
 nav ul li a:hover {
-  background: #16a085;
+  background: #16a085;                /* farge når du holder musen over */
 }
 nav ul li a.active {
   background: #145a4b;
@@ -72,13 +74,13 @@ nav ul li a.active {
 
 /* === Hovedinnhold === */
 main {
-  max-width: 900px;
-  margin: 1rem auto;
-  padding: 0 1rem;
+  max-width: 900px;          /* maks bredde på innholdet */
+  margin: 1rem auto;         /* sentrerer innholdet med litt luft rundt */
+  padding: 0 1rem;            /* innvendig avstand */
 }
 
-/* === Kortliste med ikoner === */
-.day-list {
+/* === Kortliste med ikoner === */                   
+.day-list {                          /* .day-list → Dette er listen som holder flere kort (som kan være personas).  */
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -87,29 +89,29 @@ main {
   padding: 0;
 }
 
-.day-card {
-  background: white;
-  width: 260px;
-  padding: 1rem;
+.day-card {                          /*day-card → Dette er enkeltkortet, altså hver persona kan ligge i et element med klassen .day-card.  */
+  background: white;              /* kortets bakgrunn */
+  width: 260px;                     /* kortets bredde */
+  padding: 1rem;                     /* innvendig margin */
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .day-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-4px);                   /* løfter kortet på hover */  
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 /* === Ikonbilder === */
 .day-card img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 1rem;
+  width: 80px;              /* → bredde på bildet*/
+  height: 80px;              /*→ høyde på bildet */
+  margin-bottom: 1rem;       /*→ litt plass under bildet før teksten begynner */  
 }
 
 /* === Knapper === */
-.button, .primary-btn, input[type="submit"], .btn {
+.button, .primary-btn, input[type="submit"], .btn {   /* → Dette er alle knapper på siden */
   background: #3498db;
   color: white;
   padding: 0.6rem 1.2rem;
@@ -120,29 +122,29 @@ main {
   text-decoration: none;
   display: inline-block;
   margin-top: 0.5rem;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease;                             /* → gjør at bakgrunnsfargen skifter mykt når du holder musen over */
 }
-.button:hover, .primary-btn:hover, input[type="submit"]:hover, .btn:hover {
+.button:hover, .primary-btn:hover, input[type="submit"]:hover, .btn:hover {   /*→ her endres bakgrunnsfargen når du holder musen over knappen*/
   background: #2c7fb1;
 }
 
-/* === Footer === */
+/* === Footer :- Kort sagt: footer er nederst på siden, og brukes til generell informasjon eller navigasjon som gjelder hele nettsiden.   === */
 footer {
   text-align: center;
-  background: #2c3e50;
-  color: #e9f0f2;
-  padding: 1rem;
-  margin-top: 2rem;
-  font-size: 0.95rem;
+  background: #2c3e50;                   /* mørk blå bakgrunn */
+  color: #e9f0f2;                         /* lys tekst */
+  padding: 1rem;                           /* innvendig avstand */
+  margin-top: 2rem;                        /* litt plass over footeren */
+  font-size: 0.95rem;                    /* litt mindre tekst */
 }
 
 /* === Responsivt === */
-@media (max-width: 600px) {
+@media (max-width: 600px) {                 /*→ denne regelen gjelder kun for skjermer som er 600px brede eller smalere (mobil).*/
   nav ul {
-    flex-direction: column;
+    flex-direction: column;                /* → menyen som vanligvis ligger horisontalt, blir vertikal på små skjermer. */   
     gap: 0.5rem;
   }
-  .day-card {
+  .day-card {                             /* →  blir nesten hele bredden av skjermen, slik at de ser bedre ut på mobil. */
     width: 95%;
   }
 }
