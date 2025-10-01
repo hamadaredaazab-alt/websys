@@ -1,23 +1,64 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agile metoder</title>
-<link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agile metoder</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* Lokal stil for å sikre layout – kan også legges i style.css senere */
+    .metode-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      align-items: start;
+      margin: 2rem 0;
+    }
+
+    .metode-grid img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-height: 300px;
+      object-fit: cover;
+    }
+
+    .info h3 {
+      margin-top: 0;
+      color: #1f3c5c;
+    }
+
+    .info ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .info ul li {
+      background: #f8fafc;
+      margin-bottom: 0.8rem;
+      padding: 0.8rem;
+      border-left: 4px solid #1f3c5c;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 768px) {
+      .metode-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-<header>
-<h1>Agile metoder</h1>
-<nav>
-<a href="../index.html">Tilbake til oppgaver</a>
-</nav>
-</header>
+  <header>
+    <h1>Agile metoder</h1>
+    <nav>
+      <a href="../index.html">Tilbake til oppgaver</a>
+    </nav>
+  </header>
 
-
-<main>
-<h2>Hva er agile metoder?</h2>
-<p>Agile-metoder har de siste årene blitt veldig populære i IT-prosjekter. Hovedideen er å være fleksibel, levere litt og litt underveis, og samarbeide tett med kunden. Agile bygger på noen prinsipper som sier at folk og samarbeid er viktigere enn strenge planer og verktøy, og at endringer i prosjektet skal sees på som noe naturlig. Dette er ganske annerledes enn tradisjonelle metoder, som fossefallsmetoden, der man planlegger alt i starten og følger en fast plan fra begynnelse til slutt.
+  <main>
+    <p>
+      Agile-metoder har de siste årene blitt veldig populære i IT-prosjekter. Hovedideen er å være fleksibel, levere litt og litt underveis, og samarbeide tett med kunden. Agile bygger på noen prinsipper som sier at folk og samarbeid er viktigere enn strenge planer og verktøy, og at endringer i prosjektet skal sees på som noe naturlig. Dette er ganske annerledes enn tradisjonelle metoder, som fossefallsmetoden, der man planlegger alt i starten og følger en fast plan fra begynnelse til slutt.
 
 En av de største fordelene med Agile er at det passer godt når man ikke vet alt på forhånd. I mange IT-prosjekter kan det dukke opp nye behov underveis, og Agile takler dette ved å jobbe i korte perioder som kalles «sprints». Da kan man levere litt av gangen og få tilbakemelding tidlig. På den måten unngår man å ende opp med et produkt som ikke passer for brukerne. I tillegg gjør Agile at teamet får mer ansvar og kan organisere seg selv, noe som ofte gjør at de blir mer motiverte og kreative.
 
@@ -25,32 +66,85 @@ Men Agile har også noen ulemper. For at det skal fungere bra, må organisasjone
 
 Når man sammenligner Agile med fossefallsmetoden, ser man at det avhenger av prosjektet hvilken som passer best. Agile funker godt når ting forandrer seg mye og man trenger å tilpasse seg, mens fossefall passer bedre når alt er klart og forutsigbart fra starten. Mange bedrifter velger faktisk en blanding, der de tar litt fra begge metodene.
 
-Kort sagt: Agile kan være veldig nyttig, spesielt i prosjekter med mye usikkerhet og behov for kundesamarbeid. Men for å lykkes må både teamet og organisasjonen være klare for å jobbe på denne måten. Ofte er det best å tilpasse metoden etter situasjonen, i stedet for å følge den helt uvilkårlig.</p>
+Kort sagt: Agile kan være veldig nyttig, spesielt i prosjekter med mye usikkerhet og behov for kundesamarbeid. Men for å lykkes må både teamet og organisasjonen være klare for å jobbe på denne måten. Ofte er det best å tilpasse metoden etter situasjonen, i stedet for å følge den helt uvilkårlig.
+    </p>
 
+    <h2>Grunnleggende prinsipper (Agile Manifesto)</h2>
+    <ul class="info">
+      <li><strong>Samarbeid med kunden</strong> fremfor kontraktsforhandling</li>
+      <li><strong>Tilpasning til endringer</strong> fremfor å følge en rigid plan</li>
+      <li><strong>Fungerende programvare</strong> fremfor omfattende dokumentasjon</li>
+      <li><strong>Individer og samspill</strong> fremfor prosesser og verktøy</li>
+    </ul>
 
-<h2>Prinsipper for agile metoder</h2>
-<ul>
-<li>Samarbeid med kunden fremfor kontraktsforhandling</li>
-<li>Tilpasning til endringer fremfor å følge en rigid plan</li>
-<li>Fungerende programvare fremfor omfattende dokumentasjon</li>
-<li>Individer og samspill fremfor prosesser og verktøy</li>
-</ul>
+    <h2>Vanlige agile metoder</h2>
 
+    <!-- Scrum -->
+    <div class="metode-grid">
+      <img src="https://static.vecteezy.com/system/resources/previews/013/079/502/non_2x/scrum-development-icon-illustration-scrum-development-agile-methodology-software-iterative-incremental-process-infographic-template-concept-banner-icon-set-icons-vector.jpg" alt="Scrum illustrasjon">
+      <div class="info">
+        <h3>Scrum</h3>
+        <p>Teamet jobber i korte utviklingssykluser kalt <em>sprints</em> (vanligvis 1–4 uker). Hver sprint starter med planlegging og avsluttes med en demonstrasjon og retrospektiv.</p>
+        <ul>
+          <li><strong>Rollemodell:</strong> Product Owner, Scrum Master, Utviklerteam</li>
+          <li><strong>Møter:</strong> Daglige stand-ups, sprint-planlegging, retrospektiv</li>
+        </ul>
+      </div>
+    </div>
 
-<h2>Eksempler på agile metoder</h2>
-<ul>
-<li><strong>Scrum:</strong> Teamet jobber i korte «sprints» og har faste møter som stand-ups.</li>
-<li><strong>Kanban:</strong> Arbeidet organiseres på tavler med kolonner som «Å gjøre», «Pågår», «Ferdig».</li>
-<li><strong>Extreme Programming (XP):</strong> Fokus på kvalitet, testing og samarbeid i par.</li>
-</ul>
+    <!-- Kanban -->
+    <div class="metode-grid">
+      <img src="https://png.pngtree.com/png-clipart/20230813/original/pngtree-flat-design-kanban-board-development-methodology-with-colorful-red-stickers-vector-picture-image_10512832.png" alt="Kanban illustrasjon">
+      <div class="info">
+        <h3>Kanban</h3>
+        <p>Arbeidet visualiseres på en tavle med kolonner som «Å gjøre», «Pågår» og «Ferdig». Målet er å begrense antall oppgaver som jobbes med samtidig for å forbedre flyt og effektivitet.</p>
+        <ul>
+          <li><strong>Fleksibel:</strong> Ingen faste sykluser – kontinuerlig leveranse</li>
+          <li><strong>Bedre oversikt:</strong> Lett å se hvor arbeidet står</li>
+        </ul>
+      </div>
+    </div>
 
+    <!-- Extreme Programming (XP) -->
+    <div class="metode-grid">
+      <img src="https://cdn1.iconfinder.com/data/icons/project-management-color-line-vol-1/512/EXTEME_PROGRAMMING-512.png" alt="Extreme Programming illustrasjon">
+      <div class="info">
+        <h3>Extreme Programming (XP)</h3>
+        <p>En metode med sterkt fokus på teknisk kvalitet, hyppig testing og tett samarbeid – ofte med parprogrammering og kontinuerlig integrasjon.</p>
+        <ul>
+          <li><strong>Praksiser:</strong> Test-drevet utvikling (TDD), refaktorering, parprogrammering</li>
+          <li><strong>Mål:</strong> Høy kodekvalitet og rask tilpasning til endringer</li>
+        </ul>
+      </div>
+    </div>
 
-<p>Her kan du utdype hvordan agile metoder kan brukes i prosjektet ditt.</p>
-</main>
+    <h2>Fordele og ulemper med Agile</h2>
+    <div class="metode-grid">
+      <div class="info">
+        <h3>✅ Fordeler</h3>
+        <ul>
+          <li>Brukerbehov blir tatt hensyn til underveis</li>
+          <li>Lettere å håndtere endringer</li>
+          <li>Team får mer eierskap og motivasjon</li>
+          <li>Tidlig leveranse av verdi</li>
+        </ul>
+      </div>
+      <div class="info">
+        <h3>❌ Ulemper</h3>
+        <ul>
+          <li>Krever høy grad av tillit og kommunikasjon</li>
+          <li>Vanskelig å estimere tid/kostnad nøyaktig</li>
+          <li>Kan være utfordrende i store organisasjoner</li>
+          <li>Mindre egnet hvis krav er helt faste fra start</li>
+        </ul>
+      </div>
+    </div>
 
+    
+  </main>
 
-<footer>
-<p>&copy; 2025 Tren Med Oss</p>
-</footer>
+  <footer>
+    <p>&copy; 2025 Studentprosjekt — Obligatorisk arbeidskrav</p>
+  </footer>
 </body>
 </html>

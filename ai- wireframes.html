@@ -5,6 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IA og Wireframes</title>
   <link rel="stylesheet" href="../style.css">
+  <style>
+    pre {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.95rem;
+      border-left: 4px solid #1f3c5c;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 1rem 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .wireframe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .wireframe-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -17,26 +48,58 @@
   <main>
     <section>
       <h2>Informasjonsarkitektur (IA)</h2>
-      <p>Her forklarer du hvordan innholdet på nettsiden er organisert.</p>
+      <p>
+        Informasjonsarkitektur handler om hvordan innholdet på nettsiden er organisert, navngitt og strukturert – slik at brukeren lett kan finne det de leter etter. 
+        For «Tren Med Oss» har vi valgt en enkel og logisk struktur basert på brukerbehov.
+      </p>
+
       <pre><code>Hjem
 ├── Treningsplan
-│   ├── Uke 1
-│   ├── Uke 2
-│   └── Uke 3
+│   ├── Uke 1 – Full kropp
+│   ├── Uke 2 – Styrke og stabilitet
+│   └── Uke 3 – Kondisjon og mobilitet
 ├── Om oss
-└── Kontakt</code></pre>
+│   ├── Hva vi tilbyr
+│   └── Våre trenere
+└── Kontakt
+    ├── Skjema for spørsmål
+    └── Sosiale medier</code></pre>
+
+      <p>
+        Denne strukturen gjør at besøkende raskt kan navigere til treningsplanen, lese om prosjektet, eller ta kontakt – uten å måtte lete lenge.
+      </p>
     </section>
 
     <section>
       <h2>Wireframes</h2>
-      <p>En wireframe er en enkel, visuell skisse av en nettside eller app, laget tidlig i designprosessen. 
-         Den viser hvordan innhold og funksjoner skal plasseres, uten fokus på farger, grafikk eller detaljer. <code>&lt;img&gt;</code>.</p>
-      <img src="wireframe-eksempel.png" alt="Eksempel på wireframe" style="max-width: 400px;">
+      <p>
+        Wireframes er skisser som viser plassering av innhold og funksjoner på nettsiden – uten farger, bilder eller typografi. 
+        De brukes tidlig i prosessen for å teste layout og brukerflyt før vi begynner å kode.
+      </p>
+
+      <div class="wireframe-grid">
+        <div>
+          <h3>Hjemmeside</h3>
+          <img src="bilder/wireframe-hjem.png" alt="Wireframe: Hjemmeside for Tren Med Oss">
+        </div>
+        <div>
+          <h3>Treningsplan</h3>
+          <img src="bilder/wireframe-treningsplan.png" alt="Wireframe: Treningsplanside med ukeoversikt og videoer">
+        </div>
+        <div>
+          <h3>Kontakt</h3>
+          <img src="bilder/wireframe-kontakt.png" alt="Wireframe: Kontaktskjema og sosiale lenker">
+        </div>
+      </div>
+
+      <p>
+        <em>💡 Tips: Lag wireframes med verktøy som Figma, Adobe XD, Balsamiq – eller tegn dem for hånd og ta bilde!</em>
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Tren Med Oss</p>
+    <p>&copy; 2025 Studentprosjekt — Obligatorisk arbeidskrav</p>
   </footer>
 </body>
 </html>

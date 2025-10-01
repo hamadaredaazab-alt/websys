@@ -1,54 +1,181 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Systemutviklingsmetoder</title>
-<link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Systemutviklingsmetoder</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f4f7fb;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1f3c5c;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: underline;
+      font-size: 0.9rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #1f3c5c;
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Grid layout for metoder */
+    .metode-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      align-items: start;
+      margin: 2rem 0;
+    }
+
+    .metode-grid img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-height: 300px;
+      object-fit: cover;
+    }
+
+    .info ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .info ul li {
+      background: #f8fafc;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-left: 4px solid #1f3c5c;
+      border-radius: 6px;
+    }
+
+    .info ul li strong {
+      color: #1f3c5c;
+    }
+
+    footer {
+      background-color: #1f3c5c;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsiv for mobil */
+    @media (max-width: 768px) {
+      .metode-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-<header>
-<h1>Systemutviklingsmetoder</h1>
-<nav>
-<a href="../index.html">Tilbake til oppgaver</a>
-</nav>
-</header>
+  <header>
+    <h1>Systemutviklingsmetoder</h1>
+    <nav>
+      <a href="../index.html">Tilbake til oppgaver</a>
+    </nav>
+  </header>
 
-
-<main>
-<h2>Hva er systemutviklingsmetoder?</h2>
-<p>Systemutviklingsmetoder er ulike måter å planlegge, utvikle og levere IT-systemer på. De hjelper utviklere og team med å ha struktur i arbeidet.</p>
-
-
-<h2>Eksempler på metoder</h2>
-<ul>
-<li><strong>:</strong> En lineær prosess der man gjør en fase av gangen (analyse → design → utvikling → testing → drift).</li>
-<li><strong>Iterativ utvikling:</strong> Prosessen gjentas i sykluser for å forbedre systemet steg for steg.</li>
-<li><strong>Prototyping:</strong> Man lager enkle modeller (prototyper) av systemet for å teste og få tilbakemeldinger tidlig.</li>
-</ul>
-
-
-<p>Systemutviklingsmetoder er forskjellige måter å planlegge, lage, teste og ta i bruk et datasystem eller en programvare på. Det handler rett og slett om hvordan man jobber når man skal utvikle et system, slik at man får en strukturert prosess og unngår kaos.
+  <main>
+    <p>
+     Systemutviklingsmetoder er forskjellige måter å planlegge, lage, teste og ta i bruk et datasystem eller en programvare på. Det handler rett og slett om hvordan man jobber når man skal utvikle et system, slik at man får en strukturert prosess og unngår kaos.
 Noen vanlige metoder er:
 Fossefallsmetoden – man jobber steg for steg (planlegging → design → koding → testing → ferdig), og man går ikke tilbake.
 Fossefallsmetoden, som er veldig ryddig og lett å forstå. Man tar ett steg av gangen, fra planlegging til ferdig system. Fordelen er at det blir oversiktlig, men ulempen er at det kan være vanskelig å gjøre endringer underveis. Hvis man oppdager en feil sent i prosessen, kan det bli både dyrt og tidkrevende å rette opp.
+    </p>
 
-Smidig utvikling (Agile/Scrum) – man jobber i korte perioder (sprinter), får tilbakemeldinger underveis og forbedrer systemet litt etter litt.
+    <h2>Vanlige systemutviklingsmetoder</h2>
 
-En annen metode er smidig utvikling (Agile). Her jobber man i korte perioder og får tilbakemeldinger hele tiden. Dette gjør at systemet kan forbedres underveis, og man kan lettere tilpasse seg nye behov. 
-Ulempen er at det kan bli litt uoversiktlig hvis man ikke har god kommunikasjon i teamet.
+    <!-- Metode 1: Fossefall -->
+    <div class="metode-grid">
+      <img src="https://img.icons8.com/color/400/waterfall.png" alt="Fossefallsmetoden illustrasjon">
+      <div class="info">
+        <h3>Fossefallsmetoden</h3>
+        <p>
+          En lineær og sekvensiell metode der man fullfører én fase før man går videre til neste: 
+          kravspesifikasjon → design → implementasjon → testing → drift.
+        </p>
+        <ul>
+          <li><strong>Fordele:</strong> Ryddig, oversiktlig og enkel å følge for små, veldefinerte prosjekter.</li>
+          <li><strong>Ulemper:</strong> Vanskelig å gå tilbake og gjøre endringer. Feil oppdaget sent blir dyre og tidkrevende å rette.</li>
+        </ul>
+      </div>
+    </div>
 
-Prototyping – man lager en enkel utgave (prototype) av systemet først for å teste ideer og få innspill før man bygger den endelige versjonen.
+    <!-- Metode 2: Smidig (Agile/Scrum) -->
+    <div class="metode-grid">
+      <img src="https://img.icons8.com/color/400/agile.png" alt="Smidig utvikling illustrasjon">
+      <div class="info">
+        <h3>Smidig utvikling (Agile/Scrum)</h3>
+        <p>
+          Utvikling skjer i korte sykluser (sprinter), med hyppige leveranser og kontinuerlig tilbakemelding fra brukere.
+        </p>
+        <ul>
+          <li><strong>Fordele:</strong> Fleksibel, tilpasningsdyktig og brukerfokusert. Endringer er enkle å håndtere.</li>
+          <li><strong>Ulemper:</strong> Krever god kommunikasjon og kan føles ustrukturert uten erfaring.</li>
+        </ul>
+      </div>
+    </div>
 
+    <!-- Metode 3: Prototyping -->
+    <div class="metode-grid">
+      <img src="https://img.icons8.com/color/400/prototype.png" alt="Prototyping illustrasjon">
+      <div class="info">
+        <h3>Prototyping</h3>
+        <p>
+          Man lager en forenklet modell (prototype) av systemet tidlig i prosessen for å teste ideer og få brukerinnspill.
+        </p>
+        <ul>
+          <li><strong>Fordele:</strong> Brukere ser og prøver løsningen tidlig. Reduserer risiko for feil i sluttproduktet.</li>
+          <li><strong>Ulemper:</strong> Kan føre til at man bruker for mye tid på prototyper i stedet for ferdig løsning.</li>
+        </ul>
+      </div>
+    </div>
 
-Til slutt finnes prototyping, der man først lager en enkel testversjon. Fordelen er at brukerne får se hvordan systemet kan bli, og de kan gi innspill tidlig. Men det kan være en ulempe at man bruker mye tid på å lage prototyper i stedet for å jobbe med det endelige systemet.
+    <h2>Hvilken metode bør man velge?</h2>
+    <p>
+      Det finnes ingen "beste" metode – valget avhenger av prosjektets natur. 
+      Hvis kravene er klare og uforanderlige, kan fossefall fungere godt. 
+      Men i de fleste moderne prosjekter, der behov endrer seg, er smidige metoder eller prototyping ofte mer hensiktsmessige.
+    </p>
+  </main>
 
-Alt i alt kan vi si at det ikke finnes én perfekt metode. Hvilken metode som er best, avhenger av prosjektet. Hvis man vet nøyaktig hva man skal lage, kan Fossefallsmetoden passe. Men hvis man er usikker og trenger å teste seg fram, er smidig utvikling eller prototyping ofte bedre.</p>
-</main>
-
-
-<footer>
-<p>&copy; 2025 Tren Med Oss</p>
-</footer>
+  <footer>
+    <p>&copy; 2025 Studentprosjekt — Obligatorisk arbeidskrav</p>
+  </footer>
 </body>
 </html>

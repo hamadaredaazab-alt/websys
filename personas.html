@@ -1,61 +1,142 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Personas</title>
-<link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personas</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f4f7fb;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1f3c5c;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: underline;
+      font-size: 0.9rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #1f3c5c;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Grid layout for persona */
+    .persona {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .persona img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .info ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .info ul li {
+      background: #f8fafc;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-left: 4px solid #1f3c5c;
+      border-radius: 6px;
+    }
+
+    .info ul li strong {
+      color: #1f3c5c;
+    }
+
+    footer {
+      background-color: #1f3c5c;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsiv for mobil */
+    @media (max-width: 768px) {
+      .persona {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-<header>
-<h1>Personas</h1>
-<nav>
-<a href="../index.html">Tilbake til oppgaver</a>
-</nav>
-</header>
+  <header>
+    <h1>Personas</h1>
+    <nav>
+      <a href="../index.html">Tilbake til oppgaver</a>
+    </nav>
+  </header>
 
+  <main>
+    <h2>Definisjon av en persona</h2>
+    <p>En persona er en fiktiv, men realistisk representasjon av en typisk bruker. 
+    Den brukes for å forstå brukernes behov, mål og utfordringer i systemutvikling og designprosesser.</p>
 
-<main>
-<h2>Definisjon av en persona</h2>
-<p>En persona er en fiktiv, men realistisk representasjon av en typisk bruker. 
-Den brukes for å forstå brukernes behov, mål og utfordringer i systemutvikling og designprosesser.</p>
+    <section class="persona">
+      <!-- Venstre side: bilde -->
+      <div class="photo">
+        <img src="https://st2.depositphotos.com/37221134/46554/v/450/depositphotos_465540924-stock-illustration-student-woman-with-laptop-studying.jpg" alt="Student" />
+      </div>
 
+      <!-- Høyre side: info -->
+      <div class="info">
+        <ul>
+          <li><strong>Navn:</strong> Fredrikke</li>
+          <li><strong>Kjønn:</strong> Kvinne</li>
+          <li><strong>Alder:</strong> 20 år</li>
+          <li><strong>Sivilstatus:</strong> Singel</li>
+          <li><strong>Livssituasjon:</strong> Ny student, har flyttet på hybel og bor for første gang hjemmefra.</li>
+          <li><strong>Bakgrunn:</strong> Fredrikke er fersk student og er først og fremst opptatt av å finne ut av det nye livet sitt. 
+            Hun ønsker å finne nye venner, fortsette med hobbyene sine og finne ut hvordan hun skal få studielivet til å fungere.</li>
+          <li><strong>Mål:</strong> Skape et nettverk av venner, balansere studier, fritid og praktiske gjøremål, samt fullføre studiene og få en spennende jobb.</li>
+          <li><strong>Utfordringer:</strong> Lav motivasjon, usikkerhet rundt økonomi og tid, ensomhet og vansker med å finne aktiviteter på et studentbudsjett.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-<img src="https://st2.depositphotos.com/37221134/46554/v/450/depositphotos_465540924-stock-illustration-student-woman-with-laptop-studying.jpg" alt="Student" />
-
-
-<ul>
-<li><strong>Navn:</strong> Fredrikke</li>
-<li><strong>Kjønn:</strong> Kvinne</li>
-<li><strong>Alder:</strong> 20 år</li>
-<li><strong>Sivilstatus:</strong> Singel</li>
-<li><strong>Livssituasjon:</strong> Ny student, har flyttet på hybel og bor for første gang hjemmefra.</li>
-<li><strong>Bakgrunn:</strong><br>
-Fredrikke er fersk student og er først og fremst opptatt av å finne ut av det nye livet sitt.<br>
-Bor på liten hybel med enkel standard, må lære seg å lage mat og styre egen økonomi.<br>
-Hun ønsker å finne nye venner, og finne ut om det er noen grupper eller klubber hvor hun kan fortsette med hobbyene sine: motorsport, piano og terrengsykling.<br>
-Hun vil også finne ut hvordan hun skal få studielivet til å fungere.<br>
-Fredrikke er positiv og nysgjerrig på nye opplevelser, åpen for nye mennesker og miljøer.<br>
-Litt usikker på seg selv i en ny by, men ønsker å finne sin plass i nye miljøer.
-</li>
-
-<li><strong>Mål:</strong> Skape et nettverk av venner, finne en god balanse mellom studier, fritid og praktiske gjøremål. 
-Fortsetter med hobbyene sine i en ny by og fullføre studiene og få en spennende jobb i fremtiden</li>
-<li>
-    <strong>Utfordringer:</strong><br>
-  Lav motivasjon og usikkerhet rundt hvordan hverdagen fungerer (økonomi og tid).<br>
-  Kan føle seg ensom og savne familie/venner hjemmefra.<br>
-  Vanskelig å vite hvor man finner relevante aktiviteter, klubber og møteplasser med begrenset studentbudsjett.
-</li></li>
-</ul>
-
-
-
-</main>
-
-
-<footer>
-<p>&copy; 2025 Tren Med Oss</p>
-</footer>
+  <footer>
+    <p>&copy; 2025 Studentprosjekt — Obligatorisk arbeidskrav</p>
+  </footer>
 </body>
 </html>
