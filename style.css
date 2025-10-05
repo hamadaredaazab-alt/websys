@@ -20,7 +20,7 @@ body {
 <h2>–<h6> brukes for å lage seksjoner og underseksjoner.*/
 h1 {
   font-size: 2rem;              /*→ størrelsen på overskriften*/
-  color: #2c3e50;             /*→ fargen på teksten */
+  color: #c8d4e0;             /*→ fargen på teksten */
   text-align: center;            /*→ hvordan teksten plasseres (her: sentrert)*/
 }
 h2 {
@@ -38,7 +38,7 @@ h3 {
 /* === Header === */
 header {
   text-align: center;
-  background: #2c3e50;
+  background: #2c5050;
   color: white;
   padding: 2rem 1rem;
 }
@@ -68,7 +68,10 @@ nav ul li a {
 nav ul li a:hover {
   background: #16a085;                /* farge når du holder musen over */
 }
-nav ul li a.active {
+nav ul li a.active {           /* nav ul li a.active betyr: "Velg alle <a>-elementer som har klassen active, som ligger inne i et <li>-element, 
+                                                    som igjen ligger inne i et <ul> inni et <nav>".
+
+                                   background: #145a4b; = setter bakgrunnsfargen på den aktive lenken til en grønnaktig farge (#145a4b er en mørk grønn-blå tone).*/
   background: #145a4b;
 }
 
@@ -131,7 +134,7 @@ main {
 /* === Footer :- Kort sagt: footer er nederst på siden, og brukes til generell informasjon eller navigasjon som gjelder hele nettsiden.   === */
 footer {
   text-align: center;
-  background: #2c3e50;                   /* mørk blå bakgrunn */
+  background: #2c5050;                   /* mørk blå bakgrunn */
   color: #e9f0f2;                         /* lys tekst */
   padding: 1rem;                           /* innvendig avstand */
   margin-top: 2rem;                        /* litt plass over footeren */
