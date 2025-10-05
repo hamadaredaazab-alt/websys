@@ -115,16 +115,16 @@ main {
 
 /* === Knapper === */
 .button, .primary-btn, input[type="submit"], .btn {   /* → Dette er alle knapper på siden */
-  background: #3498db;
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 0.5rem;
+  background: #3498db;  /*← Bakgrunnsfarge (blå)*/
+  color: white;           /*← Tekstfarge (hvit)*/
+  padding: 0.6rem 1.2rem;  /*← Innvendig avstand (top/bunn, venstre/høyre */
+  border-radius: 6px;    /*← Runde hjørner*/
+  border: none;            /*← Ingen kantlinje*/
+  font-weight: bold;       /*← Fet tekst*/
+  cursor: pointer;           /*← Pekeren blir hånd når du holder over*/
+  text-decoration: none;      /*← Fjerner understrek*/  
+  display: inline-block;      /*← Kan ha bredde/høyde og margin*/
+  margin-top: 0.5rem;         /*← Liten avstand over*/
   transition: background 0.2s ease;                             /* → gjør at bakgrunnsfargen skifter mykt når du holder musen over */
 }
 .button:hover, .primary-btn:hover, input[type="submit"]:hover, .btn:hover {   /*→ her endres bakgrunnsfargen når du holder musen over knappen*/

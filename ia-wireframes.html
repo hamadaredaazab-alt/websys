@@ -3,57 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IA og Wireframes</title>
+  <title>ia-wireframes</title>
   <link rel="stylesheet" href="../style.css">
+
   <style>
-    pre {
-      background: #f8f9fa;
-      padding: 1rem;
-      border-radius: 8px;
-      overflow-x: auto;
-      font-size: 0.95rem;
-      border-left: 4px solid #1f3c5c;
+    pre {                                      /*pre-elementet brukes til forhåndsformatert tekst, f.eks. kode eller struktur som du viser med mellomrom og linjeskift.*/
+      background: #f8f9fa;                /*→ lys grå bakgrunnsfarge for å skille blokken fra resten av siden.*/
+      padding: 1rem;                        /*→ legger til innvendig avstand inni boksen, så teksten ikke går helt inntil kanten.*/
+      border-radius: 8px;                  /*→ gjør hjørnene på boksen litt runde.*/
+      overflow-x: auto;                    /*→ hvis innholdet blir for bredt, får du en horisontal scroll i stedet for at teksten bryter layouten.*/
+      font-size: 0.95rem;                   /*→ setter fontstørrelsen litt mindre enn standardtekst.*/
+      border-left: 4px solid #1f3c5c;           /*→ legger til en tykk venstremargin/farge-strek, ofte brukt for å lage et “kode-block”-utseende.*/
     }
 
     img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin: 1rem 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 100%;                         /*→ bildet kan ikke bli bredere enn containeren det ligger i.*/
+      height: auto;                            /*→ høyden skaleres proporsjonalt med bredden. */
+      border-radius: 8px;                      /*→ gjør hjørnene på bildet runde.*/
+      margin: 1rem 0;                          /*→ gir avstand over og under bildet.*/
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);  /*→ legger til en myk skygge under og rundt bildet, som gir dybde.*/
     }
 
     .wireframe-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
+      display: grid;                                                   /*→ lager et rutenett-layout for innholdet (wireframes i dette tilfellet).*/
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));     /*→
+
+lager kolonner som er minst 300px brede. /*auto-fit fyller så mange kolonner som plass til.
+
+1fr betyr at kolonnene deler tilgjengelig plass likt.*/
+      gap: 1.5rem;                                                   /*→ gir avstand mellom rader og kolonner i gridet.*/
+      margin-top: 1.5rem;                                              /*→ gir avstand over hele grid-seksjonen.*/
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 600px) {                        /*→ gjelder kun for skjermer som er 600px eller smalere (mobiltelefoner).*/
       .wireframe-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;                 /*→ gjør at alle elementene legges i én kolonne, i stedet for flere side ved side. Dette gjør siden mobilvennlig.*/
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>IA og Wireframes</h1>
+    <h1>ia-wireframes</h1>
     <nav>
-      <a href="../index.html">Tilbake til oppgaver</a>
+      <a href="../index.html" class="btn">Tilbake til oppgaver</a>
     </nav>
   </header>
 
   <main>
-  <section>
-  <h2>Informasjonsarkitektur (IA)</h2>
-  <p>
-    Informasjonsarkitektur handler om hvordan innholdet på nettsiden er organisert, navngitt og strukturert – slik at brukeren lett kan finne det de leter etter. 
-    For å tilpasse siden til vår persona, <strong>Fredrikke (20 år, student)</strong>, har vi laget en enkel og logisk struktur basert på hennes behov for aktiviteter, tips og sosial tilhørighet.
-  </p>
+    <section>
+      <h2>Informasjonsarkitektur (IA)</h2>
+      <p>
+        Informasjonsarkitektur handler om hvordan innholdet på nettsiden er organisert, navngitt og strukturert – slik at brukeren lett kan finne det de leter etter. 
+        For å tilpasse siden til vår persona, <strong>Fredrikke (20 år, student)</strong>, har vi laget en enkel og logisk struktur basert på hennes behov for aktiviteter, tips og sosial tilhørighet.
+      </p>
 
-  <pre><code>Hjem
+      <pre><code>Hjem
 ── Aktiviteter
    ─ Sport og trening
    ─ Kultur og arrangementer
@@ -66,43 +71,43 @@
     ─ Skjema for spørsmål
     _ Studentgrupper og sosiale medier</code></pre>
 
-  <p>
-    Denne strukturen gjør at Fredrikke raskt kan finne relevante aktiviteter, få tips til studielivet, 
-    og komme i kontakt med andre studenter – uten å måtte lete lenge.
-  </p>
-</section>
+      <p>
+        Denne strukturen gjør at Fredrikke raskt kan finne relevante aktiviteter, få tips til studielivet, 
+        og komme i kontakt med andre studenter – uten å måtte lete lenge.
+      </p>
+    </section>
 
-   <section>
-  <h2>Wireframes</h2>
-  <p>
-    Wireframes er skisser som viser plassering av innhold og funksjoner på nettsiden – uten farger, bilder eller typografi. 
-    De brukes tidlig i prosessen for å teste layout og brukerflyt før vi begynner å kode. 
-    For Fredrikke viser wireframene hvordan hun enkelt kan finne aktiviteter, tips til studielivet og måter å komme i kontakt med andre.
-  </p>
+    <section>
+      <h2>Wireframes</h2>
+      <p>
+        Wireframes er skisser som viser plassering av innhold og funksjoner på nettsiden – uten farger, bilder eller typografi. 
+        De brukes tidlig i prosessen for å teste layout og brukerflyt før vi begynner å kode. 
+        For Fredrikke viser wireframene hvordan hun enkelt kan finne aktiviteter, tips til studielivet og måter å komme i kontakt med andre.
+      </p>
 
-  <div class="wireframe-grid">
-    <div>
-      <h3>Hjemmeside</h3>
-      <img src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX5536298.jpg" alt="Wireframe: Hjemmeside tilpasset Fredrikke med velkomst og hurtigknapper">
-    </div>
-    <div>
-      <h3>Aktiviteter</h3>
-      <img src="https://img.freepik.com/premium-vector/weight-training-drawing-woman-muscle-vector-female-holding-barbell-continuous-one-line-drawing_37925-6241.jpg?w=2000" alt="Wireframe: Aktivitetsoversikt for sport, kultur og sosiale treff">
-    </div>
-    <div>
-      <h3>Tips</h3>
-      <img src="https://cdn.vectorstock.com/i/500p/95/33/light-bulb-icon-vector-26749533.jpg" alt="Wireframe: Tips-seksjon med studieorganisering, økonomi og motivasjon">
-    </div>
-    <div>
-      <h3>Kontakt</h3>
-      <img src="https://cdn2.iconfinder.com/data/icons/communication-623/504/contact-mail-phone-service-business-512.png" alt="Wireframe: Kontaktside med skjema og studentgrupper på sosiale medier">
-    </div>
-  </div>
+      <div class="wireframe-grid">
+        <div>
+          <h3>Hjemmeside</h3>
+          <img src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX5536298.jpg" alt="Wireframe: Hjemmeside tilpasset Fredrikke med velkomst og hurtigknapper">
+        </div>
+        <div>
+          <h3>Aktiviteter</h3>
+          <img src="https://img.freepik.com/premium-vector/weight-training-drawing-woman-muscle-vector-female-holding-barbell-continuous-one-line-drawing_37925-6241.jpg?w=2000" alt="Wireframe: Aktivitetsoversikt for sport, kultur og sosiale treff">
+        </div>
+        <div>
+          <h3>Tips</h3>
+          <img src="https://cdn.vectorstock.com/i/500p/95/33/light-bulb-icon-vector-26749533.jpg" alt="Wireframe: Tips-seksjon med studieorganisering, økonomi og motivasjon">
+        </div>
+        <div>
+          <h3>Kontakt</h3>
+          <img src="https://cdn2.iconfinder.com/data/icons/communication-623/504/contact-mail-phone-service-business-512.png" alt="Wireframe: Kontaktside med skjema og studentgrupper på sosiale medier">
+        </div>
+      </div>
 
-  <p>
-    <em> Enkel, oversiktlig og med fokus på aktiviteter, tips og sosial kontakt.</em>
-  </p>
-</section>
+      <p>
+        <em> Enkel, oversiktlig og med fokus på aktiviteter, tips og sosial kontakt.</em>
+      </p>
+    </section>
   </main>
 
   <footer>
