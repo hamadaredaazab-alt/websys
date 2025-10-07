@@ -141,13 +141,4 @@ footer {
   font-size: 0.95rem;                    /* litt mindre tekst */
 }
 
-/* === Responsivt === */
-@media (max-width: 600px) {                 /*→ denne regelen gjelder kun for skjermer som er 600px brede eller smalere (mobil).*/
-  nav ul {
-    flex-direction: column;                /* → menyen som vanligvis ligger horisontalt, blir vertikal på små skjermer. */   
-    gap: 0.5rem;
-  }
-  .day-card {                             /* →  blir nesten hele bredden av skjermen, slik at de ser bedre ut på mobil. */
-    width: 95%;
-  }
-}
+
