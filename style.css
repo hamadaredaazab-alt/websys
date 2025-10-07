@@ -130,7 +130,8 @@ main {
 .button:hover, .primary-btn:hover, input[type="submit"]:hover, .btn:hover {   /*→ her endres bakgrunnsfargen når du holder musen over knappen*/
   background: #2c7fb1;
 }
-a: visited{color: white;}
+a:visited
+{color: white;}
 /* === Footer :- Kort sagt: footer er nederst på siden, og brukes til generell informasjon eller navigasjon som gjelder hele nettsiden.   === */
 footer {
   text-align: center;
