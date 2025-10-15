@@ -1,0 +1,98 @@
+
+
+body {
+  background-color:white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body, html {
+    height: 100%;
+    margin: 0px;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pix/goth.jpg");
+
+  /* Set a specific height */
+  height: 65%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position:relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  font-family: garamond, serif;
+  font-style: italic;
+  font-size:x-large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+h2 {
+  border-style:inherit;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  text-align: center;
+  font-family: garamond, serif;
+  font-style: italic;
+  font-size: large;
+  margin-left: 650px;
+  
+}
+
+p {
+  border-style: double;
+  background-color: whitesmoke;
+  text-align: center;
+  width: fit-content;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+div.gallery-item {
+  margin: 10px;
+  border: 1px solid #141414;
+  width: 200px;
+  background-color:white;
+}
+
+div.gallery-item:hover {
+  border: 1px solid #ffffff;
+}
+
+
+div.gallery-item img {
+  width: 100%;
+  height: 75% ;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: garamond, serif;
+  
+  font-weight:200;
+  font-size:large;
+}
