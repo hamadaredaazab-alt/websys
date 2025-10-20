@@ -18,7 +18,7 @@
   </header>
 
   <main>
-    <h3>Kode</h3>
+    <h3> HTML kode</h3>
 <code>
 &lt;html&gt;
   &lt;link rel=&quot;stylesheet&quot; href=&quot;franstyle.css&quot;&gt;
@@ -175,6 +175,136 @@
   &lt;/footer&gt;
 &lt;/body&gt;
 &lt;/html&gt;
+</code>
+
+<h3> CSS kode</h3>
+<code>
+body {
+  background-color:white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body, html {
+    height: 100%;
+    margin: 0px;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bilder/goth.jpg");
+
+  /* Set a specific height */
+  height: 65%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position:relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  font-family: garamond, serif;
+  font-style: italic;
+  font-size:x-large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+nav ul {
+  display: flex; /* lager en horisontal liste */
+  justify-content: center; /* sentrerer menypunktene */
+  gap: 0.5rem; /* avstand mellom menypunktene */
+  list-style: none; /* fjerner kulepunkter */
+  padding: 0.5rem;
+  background: #2a2b2b; /* bakgrunnsfarge for menyen */
+  border-radius: 8px;
+  flex-wrap: wrap; /* bryter linjen på små skjermer */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none; /* fjerner understreking */
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background: #292a2a; /* farge når du holder musen over */
+}
+
+nav ul li a.active {
+  /* nav ul li a.active betyr: "Velg alle <a>-elementer som har klassen active, som ligger inne i et <li>-element, 
+     som igjen ligger inne i et <ul> inni et <nav>".
+     background: #145a4b; = setter bakgrunnsfargen på den aktive lenken til en grønnaktig farge (#145a4b er en mørk grønn-blå tone). */
+  background: #3e4040;
+}
+
+h2 {
+  border-style:inherit;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  text-align: center;
+  font-family: garamond, serif;
+  font-style: italic;
+  font-size: large;
+  margin-left: 650px;
+  
+}
+
+p {
+  border-style: double;
+  background-color: whitesmoke;
+  text-align: center;
+  width: fit-content;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+div.gallery-item {
+  margin: 10px;
+  border: 1px solid #141414;
+  width: 200px;
+  background-color:white;
+}
+
+div.gallery-item:hover {
+  border: 1px solid #ffffff;
+}
+
+
+div.gallery-item img {
+  width: 100%;
+  height: 75% ;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: garamond, serif;
+  
+  font-weight:200;
+  font-size:large;
+}
+
 </code>
   </main>
 
