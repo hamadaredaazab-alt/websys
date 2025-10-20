@@ -46,7 +46,7 @@ nav ul {
   gap: 0.5rem; /* avstand mellom menypunktene */
   list-style: none; /* fjerner kulepunkter */
   padding: 0.5rem;
-  background: #1abc9c; /* bakgrunnsfarge for menyen */
+  background: #2a2b2b; /* bakgrunnsfarge for menyen */
   border-radius: 8px;
   flex-wrap: wrap; /* bryter linjen på små skjermer */
 }
@@ -60,14 +60,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background: #16a085; /* farge når du holder musen over */
+  background: #292a2a; /* farge når du holder musen over */
 }
 
 nav ul li a.active {
   /* nav ul li a.active betyr: "Velg alle <a>-elementer som har klassen active, som ligger inne i et <li>-element, 
      som igjen ligger inne i et <ul> inni et <nav>".
      background: #145a4b; = setter bakgrunnsfargen på den aktive lenken til en grønnaktig farge (#145a4b er en mørk grønn-blå tone). */
-  background: #145a4b;
+  background: #3e4040;
 }
 
 h2 {
