@@ -37,6 +37,10 @@ h3 {
   margin: 1rem 0;
 }
 
+code {
+  white-space: pre;
+}
+
 /* === Header === */
 header {
   text-align: center;
