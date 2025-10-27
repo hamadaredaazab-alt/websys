@@ -104,7 +104,7 @@
 <h3> CSS kode</h3>
 <code>
 /* =========================
-   style.css — tilpasset ikon-index
+   style.css &mdash; tilpasset ikon-index
    ========================= */
 
 * {
@@ -114,22 +114,22 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: &apos;Segoe UI&apos;, Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8f9fa;
   color: #333;
   line-height: 1.6;
 }
 
 h1 {
-  font-size: 2rem; /*→ størrelsen på overskriften */
-  color: #c8d4e0; /*→ fargen på teksten */
-  text-align: center; /*→ hvordan teksten plasseres (her: sentrert) */
+  font-size: 2rem; /*&rarr; st&oslash;rrelsen p&aring; overskriften */
+  color: #c8d4e0; /*&rarr; fargen p&aring; teksten */
+  text-align: center; /*&rarr; hvordan teksten plasseres (her: sentrert) */
 }
 
 h2 {
   font-size: 1.6rem;
   color: #2c3e50;
-  margin: 1.5rem 0; /*→ avstand over og under overskriften */
+  margin: 1.5rem 0; /*&rarr; avstand over og under overskriften */
   text-align: center;
 }
 
@@ -165,7 +165,7 @@ nav ul {
   padding: 0.5rem;
   background: #1abc9c; /* bakgrunnsfarge for menyen */
   border-radius: 8px;
-  flex-wrap: wrap; /* bryter linjen på små skjermer */
+  flex-wrap: wrap; /* bryter linjen p&aring; sm&aring; skjermer */
 }
 
 nav ul li a {
@@ -177,26 +177,26 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background: #16a085; /* farge når du holder musen over */
+  background: #16a085; /* farge n&aring;r du holder musen over */
 }
 
 nav ul li a.active {
-  /* nav ul li a.active betyr: "Velg alle <a>-elementer som har klassen active, som ligger inne i et <li>-element, 
-     som igjen ligger inne i et <ul> inni et <nav>".
-     background: #145a4b; = setter bakgrunnsfargen på den aktive lenken til en grønnaktig farge (#145a4b er en mørk grønn-blå tone). */
+  /* nav ul li a.active betyr: &quot;Velg alle &lt;a&gt;-elementer som har klassen active, som ligger inne i et &lt;li&gt;-element, 
+     som igjen ligger inne i et &lt;ul&gt; inni et &lt;nav&gt;&quot;.
+     background: #145a4b; = setter bakgrunnsfargen p&aring; den aktive lenken til en gr&oslash;nnaktig farge (#145a4b er en m&oslash;rk gr&oslash;nn-bl&aring; tone). */
   background: #145a4b;
 }
 
 /* === Hovedinnhold === */
 main {
-  max-width: 900px; /* maks bredde på innholdet */
+  max-width: 900px; /* maks bredde p&aring; innholdet */
   margin: 1rem auto; /* sentrerer innholdet med litt luft rundt */
   padding: 0 1rem; /* innvendig avstand */
 }
 
 /* === Kortliste med ikoner === */
 .day-list {
-  /* .day-list → Dette er listen som holder flere kort (som kan være personas). */
+  /* .day-list &rarr; Dette er listen som holder flere kort (som kan v&aelig;re personas). */
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -206,7 +206,7 @@ main {
 }
 
 .day-card {
-  /* day-card → Dette er enkeltkortet, altså hver persona kan ligge i et element med klassen .day-card. */
+  /* day-card &rarr; Dette er enkeltkortet, alts&aring; hver persona kan ligge i et element med klassen .day-card. */
   background: white; /* kortets bakgrunn */
   width: 260px; /* kortets bredde */
   padding: 1rem; /* innvendig margin */
@@ -217,41 +217,41 @@ main {
 }
 
 .day-card:hover {
-  transform: translateY(-4px); /* løfter kortet på hover */
+  transform: translateY(-4px); /* l&oslash;fter kortet p&aring; hover */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* === Ikonbilder === */
 .day-card img {
-  width: 60px; /* → bredde på bildet */
-  height: 60px; /* → høyde på bildet */
-  margin-bottom: 0,5rem; /* → litt plass under bildet før teksten begynner */
+  width: 60px; /* &rarr; bredde p&aring; bildet */
+  height: 60px; /* &rarr; h&oslash;yde p&aring; bildet */
+  margin-bottom: 0,5rem; /* &rarr; litt plass under bildet f&oslash;r teksten begynner */
 }
 
 /* === Knapper === */
 .button,
 .primary-btn,
-input[type="submit"],
+input[type=&quot;submit&quot;],
 .btn {
-  /* → Dette er alle knapper på siden */
-  background: #3498db; /* ← Bakgrunnsfarge (blå) */
-  color: white; /* ← Tekstfarge (hvit) */
-  padding: 0.6rem 1.2rem; /* ← Innvendig avstand (top/bunn, venstre/høyre) */
-  border-radius: 6px; /* ← Runde hjørner */
-  border: none; /* ← Ingen kantlinje */
-  font-weight: bold; /* ← Fet tekst */
-  cursor: pointer; /* ← Pekeren blir hånd når du holder over */
-  text-decoration: none; /* ← Fjerner understrek */
-  display: inline-block; /* ← Kan ha bredde/høyde og margin */
-  margin-top: 0.5rem; /* ← Liten avstand over */
-  transition: background 0.2s ease; /* → gjør at bakgrunnsfargen skifter mykt når du holder musen over */
+  /* &rarr; Dette er alle knapper p&aring; siden */
+  background: #3498db; /* &larr; Bakgrunnsfarge (bl&aring;) */
+  color: white; /* &larr; Tekstfarge (hvit) */
+  padding: 0.6rem 1.2rem; /* &larr; Innvendig avstand (top/bunn, venstre/h&oslash;yre) */
+  border-radius: 6px; /* &larr; Runde hj&oslash;rner */
+  border: none; /* &larr; Ingen kantlinje */
+  font-weight: bold; /* &larr; Fet tekst */
+  cursor: pointer; /* &larr; Pekeren blir h&aring;nd n&aring;r du holder over */
+  text-decoration: none; /* &larr; Fjerner understrek */
+  display: inline-block; /* &larr; Kan ha bredde/h&oslash;yde og margin */
+  margin-top: 0.5rem; /* &larr; Liten avstand over */
+  transition: background 0.2s ease; /* &rarr; gj&oslash;r at bakgrunnsfargen skifter mykt n&aring;r du holder musen over */
 }
 
 .button:hover,
 .primary-btn:hover,
-input[type="submit"]:hover,
+input[type=&quot;submit&quot;]:hover,
 .btn:hover {
-  /* → her endres bakgrunnsfargen når du holder musen over knappen */
+  /* &rarr; her endres bakgrunnsfargen n&aring;r du holder musen over knappen */
   background: #2c7fb1;
 }
 
@@ -259,10 +259,10 @@ a:visited {
   color: white;
 }
 
-/* === Footer :- Kort sagt: footer er nederst på siden, og brukes til generell informasjon eller navigasjon som gjelder hele nettsiden. === */
+/* === Footer :- Kort sagt: footer er nederst p&aring; siden, og brukes til generell informasjon eller navigasjon som gjelder hele nettsiden. === */
 footer {
   text-align: center;
-  background: #2c5050; /* mørk blå bakgrunn */
+  background: #2c5050; /* m&oslash;rk bl&aring; bakgrunn */
   color: #e9f0f2; /* lys tekst */
   padding: 1rem; /* innvendig avstand */
   margin-top: 2rem; /* litt plass over footeren */
