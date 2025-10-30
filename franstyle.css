@@ -125,3 +125,12 @@ div.gallery-item div.desc {
   font-weight:200;
   font-size:large;
 }
+
+footer {
+  text-align: center;
+  background: black; 
+  color: white; /* lys tekst */
+  padding: 1rem; /* innvendig avstand */
+  margin-top: 2rem;
+  font-size: 0.95rem; /* litt mindre tekst */
+}
