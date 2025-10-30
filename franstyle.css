@@ -113,14 +113,12 @@ h1 {
 
 h2 {
   border-style:inherit;
-  background-color: black;
-  color: white;
+  color: black;
   width: fit-content;
   text-align:right;
   font-family: garamond, serif;
-  font-style: italic;
-  font-size: large;
-  margin-left: 700px;
+  font-size:xx-large;
+  margin-left: 650px;
   
 }
 
