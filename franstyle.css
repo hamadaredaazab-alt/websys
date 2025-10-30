@@ -40,6 +40,40 @@ body, html {
   color: white;
 }
 
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 nav ul {
   display: flex; /* lager en horisontal liste */
   justify-content: center; /* sentrerer menypunktene */
@@ -75,7 +109,7 @@ h2 {
   background-color: black;
   color: white;
   width: fit-content;
-  text-align: center;
+  text-align:right;
   font-family: garamond, serif;
   font-style: italic;
   font-size: large;
@@ -88,7 +122,7 @@ p {
   background-color: whitesmoke;
   text-align: center;
   width: fit-content;
-  margin-left: 150px;
+  margin-left: 250px;
   margin-right: 150px;
 }
 
@@ -97,7 +131,7 @@ div.gallery {
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-left: 250px;
-  margin-right: 250px;
+  margin-right: 100px;
 }
 
 div.gallery-item {
@@ -128,9 +162,9 @@ div.gallery-item div.desc {
 
 footer {
   text-align: center;
-  background: black; 
-  color: white; /* lys tekst */
+  background: black; /* mørk blå bakgrunn */
+  color: #e9f0f2; /* lys tekst */
   padding: 1rem; /* innvendig avstand */
-  margin-top: 2rem;
+  margin-top: 2rem; /* litt plass over footeren */
   font-size: 0.95rem; /* litt mindre tekst */
 }
