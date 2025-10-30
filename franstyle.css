@@ -163,15 +163,14 @@ div.gallery-item div.desc {
   padding: 15px;
   text-align: center;
   font-family: garamond, serif;
-  
   font-weight:200;
   font-size:large;
 }
 
 footer {
   text-align: center;
-  background: black; /* mørk blå bakgrunn */
-  color: #e9f0f2; /* lys tekst */
+  background: black; 
+  color: #e9f0f2; 
   padding: 1rem; /* innvendig avstand */
   margin-top: 2rem; /* litt plass over footeren */
   font-size: 0.95rem; /* litt mindre tekst */
