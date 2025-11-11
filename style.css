@@ -90,6 +90,9 @@ main {
   max-width: 900px; /* maks bredde på innholdet */
   margin: 1rem auto; /* sentrerer innholdet med litt luft rundt */
   padding: 0 1rem; /* innvendig avstand */
+  line-height: 1.6;  /* gjør teksten mer leselig */
+  text-align: center; /*  center hvis du vil midtstille teksten */ 
+  font-size: 1.1rem;  /* Litt større enn standard 1rem */
 }
 
 /* === Kortliste med ikoner === */
