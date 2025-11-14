@@ -91,8 +91,19 @@ main {
   margin: 1rem auto; /* sentrerer innholdet med litt luft rundt */
   padding: 0 1rem; /* innvendig avstand */
   line-height: 1.6;  /* gjør teksten mer leselig */
-  text-align: center; /*  center hvis du vil midtstille teksten */ 
+  text-align: left; /*  center hvis du vil midtstille teksten */ 
   font-size: 1.1rem;  /* Litt større enn standard 1rem */
+  flex-wrap: wrap;
+}
+
+p {
+  max-width: 900px; /* maks bredde på innholdet */
+  margin: 1rem auto; /* sentrerer innholdet med litt luft rundt */
+  padding: 0 1rem; /* innvendig avstand */
+  line-height: 1.6;  /* gjør teksten mer leselig */
+  text-align: start; /*  center hvis du vil midtstille teksten */ 
+  font-size: 1.1rem;  /* Litt større enn standard 1rem */
+  flex-wrap: wrap;
 }
 
 /* === Kortliste med ikoner === */
@@ -104,15 +115,6 @@ main {
   justify-content: center;
   list-style: none;
   padding: 0;
-}
-
-code {
-  font-family: Consolas,"courier new";
-  text-align:start;
-  color: black;
-  background-color: #f1f1f1;
-  padding: 2px;
-  font-size: 105%;
 }
 
 ul {
