@@ -1,174 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="no">
-<style>{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; /* innvendig margin */
-}
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* === Overskrifter === */
-/* <h1> brukes én gang per side som hovedtittel.
-   <h2>–<h6> brukes for å lage seksjoner og underseksjoner. */
-h1 {
-  font-size: 2rem; /*→ størrelsen på overskriften */
-  color: #c8d4e0; /*→ fargen på teksten */
-  text-align: center; /*→ hvordan teksten plasseres (her: sentrert) */
-}
-
-h2 {
-  font-size: 1.6rem;
-  color: #2c3e50;
-  margin: 1.5rem 0; /*→ avstand over og under overskriften */
-  text-align: center;
-}
-
-h3 {
-  font-size: 1.3rem;
-  color: #2c3e50;
-  margin: 1rem 0;
-}
-
-code {
-  white-space: pre;
-}
-
-/* === Header === */
-header {
-  text-align: center;
-  background: #2c5050;
-  color: white;
-  padding: 2rem 1rem;
-}
-
-header p {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-}
-
-/* === Navigasjon === */
-nav ul {
-  display: flex; /* lager en horisontal liste */
-  justify-content: center; /* sentrerer menypunktene */
-  gap: 0.5rem; /* avstand mellom menypunktene */
-  list-style: none; /* fjerner kulepunkter */
-  padding: 0.5rem;
-  background: #1abc9c; /* bakgrunnsfarge for menyen */
-  border-radius: 8px;
-  flex-wrap: wrap; /* bryter linjen på små skjermer */
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none; /* fjerner understreking */
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  background: #16a085; /* farge når du holder musen over */
-}
-
-nav ul li a.active {
-  /* nav ul li a.active betyr: "Velg alle <a>-elementer som har klassen active, som ligger inne i et <li>-element, 
-     som igjen ligger inne i et <ul> inni et <nav>".
-     background: #145a4b; = setter bakgrunnsfargen på den aktive lenken til en grønnaktig farge (#145a4b er en mørk grønn-blå tone). */
-  background: #badad3;
-}
-
-/* === Hovedinnhold === */
-main {
-  max-width: 900px; /* maks bredde på innholdet */
-  margin: 1rem auto; /* sentrerer innholdet med litt luft rundt */
-  padding: 0 1rem; /* innvendig avstand */
-  line-height: 1.6;  /* gjør teksten mer leselig */
-  text-align: left; /*  center hvis du vil midtstille teksten */ 
-  font-size: 1.1rem;  /* Litt større enn standard 1rem */
-}
-
-/* === Kortliste med ikoner === */
-.day-list {
-  /* .day-list → Dette er listen som holder flere kort (som kan være personas). */
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-}
-
-.day-card {
-  /* day-card → Dette er enkeltkortet, altså hver persona kan ligge i et element med klassen .day-card. */
-  background: white; /* kortets bakgrunn */
-  width: 260px; /* kortets bredde */
-  padding: 1rem; /* innvendig margin */
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.day-card:hover {
-  transform: translateY(-4px); /* løfter kortet på hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* === Ikonbilder === */
-.day-card img {
-  width: 60px; /* → bredde på bildet */
-  height: 60px; /* → høyde på bildet */
-  margin-bottom: 0,5rem; /* → litt plass under bildet før teksten begynner */
-}
-
-/* === Knapper === */
-.button,
-.primary-btn,
-input[type="submit"],
-.btn {
-  /* → Dette er alle knapper på siden */
-  background: #3498db; /* ← Bakgrunnsfarge (blå) */
-  color: white; /* ← Tekstfarge (hvit) */
-  padding: 0.6rem 1.2rem; /* ← Innvendig avstand (top/bunn, venstre/høyre) */
-  border-radius: 6px; /* ← Runde hjørner */
-  border: none; /* ← Ingen kantlinje */
-  font-weight: bold; /* ← Fet tekst */
-  cursor: pointer; /* ← Pekeren blir hånd når du holder over */
-  text-decoration: none; /* ← Fjerner understrek */
-  display: inline-block; /* ← Kan ha bredde/høyde og margin */
-  margin-top: 0.5rem; /* ← Liten avstand over */
-  transition: background 0.2s ease; /* → gjør at bakgrunnsfargen skifter mykt når du holder musen over */
-}
-
-.button:hover,
-.primary-btn:hover,
-input[type="submit"]:hover,
-.btn:hover {
-  /* → her endres bakgrunnsfargen når du holder musen over knappen */
-  background: #2c7fb1;
-}
-
-a:visited {
-  color: rgba(30, 17, 72, 0.538);
-}
-
-/* === Footer :- Kort sagt: footer er nederst på siden, og brukes til generell informasjon eller navigasjon som gjelder hele nettsiden. === */
-footer {
-  text-align: center;
-  background: #2c5050; /* mørk blå bakgrunn */
-  color: #e9f0f2; /* lys tekst */
-  padding: 1rem; /* innvendig avstand */
-  margin-top: 2rem; /* litt plass over footeren */
-  font-size: 0.95rem; /* litt mindre tekst */
-}
-</style>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -189,7 +22,7 @@ footer {
 
   <main>
     <h3> HTML kode</h3>
-    <code>
+      <code>
 &lt;html&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;franstyle.css&quot;&gt;
 
@@ -425,7 +258,7 @@ footer {
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code>
+</code>    
 
     <h3> CSS kode</h3>
     <code>
