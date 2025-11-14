@@ -82,7 +82,7 @@ nav ul li a.active {
   /* nav ul li a.active betyr: "Velg alle <a>-elementer som har klassen active, som ligger inne i et <li>-element, 
      som igjen ligger inne i et <ul> inni et <nav>".
      background: #145a4b; = setter bakgrunnsfargen på den aktive lenken til en grønnaktig farge (#145a4b er en mørk grønn-blå tone). */
-  background: #145a4b;
+  background: #badad3;
 }
 
 /* === Hovedinnhold === */
@@ -157,7 +157,7 @@ input[type="submit"]:hover,
 }
 
 a:visited {
-  color: white;
+  color: rgba(30, 17, 72, 0.538);
 }
 
 /* === Footer :- Kort sagt: footer er nederst på siden, og brukes til generell informasjon eller navigasjon som gjelder hele nettsiden. === */
