@@ -35,6 +35,7 @@ h3 {
   font-size: 1.3rem;
   color: #2c3e50;
   margin: 1rem 0;
+  text-align: center;
 }
 
 code {
@@ -94,6 +95,15 @@ main {
   text-align: center; /*  center hvis du vil midtstille teksten */ 
   font-size: 1.1rem;  /* Litt større enn standard 1rem */
   flex-wrap: wrap;
+}
+
+code {
+  text-align: left;
+  margin-left: 50px;
+  overflow: scroll;
+  width: 100%;
+  height: 1000px;
+  display: block;
 }
 
 /* === Kortliste med ikoner === */
